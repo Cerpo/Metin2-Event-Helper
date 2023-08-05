@@ -1,0 +1,10 @@
+/*Main*/
+.main_archor_pane {
+    -fx-background-image: url('/resources/img/okeycard/img_okeycard_bg.png');
+}
+
+.main_btn {
+    -fx-background-image: url('/resources/img/okeycard/img_okeycard_btn.png');
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+}

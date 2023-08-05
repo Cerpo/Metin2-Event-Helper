@@ -1,0 +1,20 @@
+/*Main*/
+.main_archor_pane {
+    -fx-background-image: url('/resources/img/catchtheking/img_catchtheking_bg.png');
+}
+
+.main_btn {
+    -fx-background-image: url('/resources/img/catchtheking/img_catchtheking_btn.png');
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+}
+/*Window*/
+.window_archor_pane {
+    -fx-background-image: url('/resources/img/catchtheking/window/img_catchtheking_bg_window.png');
+}
+
+.window_btn {
+    -fx-background-image: url('/resources/img/catchtheking/window/img_catchtheking_btn_window.png');
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+}
