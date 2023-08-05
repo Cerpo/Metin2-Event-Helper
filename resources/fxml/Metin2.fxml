@@ -15,12 +15,12 @@
         <URL value="@../css/metin2.css" />
     </stylesheets>
    <children>
-      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="286.0" layoutY="14.0" onMouseClicked="#exit_" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="7.0">
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="293.0" layoutY="7.0" onMouseClicked="#exit_" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/mainmenu/img_mainmenu_btn_close.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="20.0" fitWidth="286.0" layoutX="20.0" layoutY="17.0" onMouseDragged="#mouseDragged" onMousePressed="#mousePressed" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="7.0" AnchorPane.topAnchor="7.0">
+      <ImageView fitHeight="20.0" fitWidth="286.0" layoutX="7.0" layoutY="7.0" onMouseDragged="#mouseDragged" onMousePressed="#mousePressed" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/mainmenu/img_mainmenu_title.png" />
          </image>
@@ -35,14 +35,14 @@
             <Font size="12.0" />
          </font>
       </Label>
-      <VBox layoutX="30.0" layoutY="138.0" maxWidth="260.0" minHeight="300.0" minWidth="260.0" prefHeight="300.0" prefWidth="260.0">
+      <VBox layoutX="30.0" layoutY="138.0" prefHeight="300.0" prefWidth="260.0">
          <children>
-            <Button maxHeight="30.0" maxWidth="260.0" minHeight="30.0" minWidth="260.0" mnemonicParsing="false" onAction="#startCatchTheKing" prefHeight="30.0" prefWidth="260.0" styleClass="main_btn" stylesheets="@../css/metin2.css" text="Catch The King" textFill="WHITE">
+            <Button mnemonicParsing="false" onAction="#startCatchTheKing" prefHeight="30.0" prefWidth="260.0" styleClass="main_btn" stylesheets="@../css/metin2.css" text="Catch The King" textFill="WHITE">
                <font>
                   <Font size="12.0" />
                </font>
             </Button>
-            <Button maxHeight="30.0" maxWidth="260.0" minHeight="30.0" minWidth="260.0" mnemonicParsing="false" onAction="#startOkeyCard" prefHeight="30.0" prefWidth="260.0" styleClass="main_btn" stylesheets="@../css/metin2.css" text="Okey Card" textFill="WHITE">
+            <Button mnemonicParsing="false" onAction="#startOkeyCard" prefHeight="30.0" prefWidth="260.0" styleClass="main_btn" stylesheets="@../css/metin2.css" text="Okey Card" textFill="WHITE">
                <font>
                   <Font size="12.0" />
                </font>
@@ -50,7 +50,7 @@
                   <Insets top="12.0" />
                </VBox.margin>
             </Button>
-            <Button layoutX="10.0" layoutY="40.0" maxHeight="30.0" maxWidth="260.0" minHeight="30.0" minWidth="260.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="260.0" styleClass="main_btn" stylesheets="@../css/metin2.css" text="---" textFill="WHITE">
+            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="260.0" styleClass="main_btn" stylesheets="@../css/metin2.css" text="---" textFill="WHITE">
                <font>
                   <Font size="12.0" />
                </font>

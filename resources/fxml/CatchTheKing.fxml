@@ -13,32 +13,32 @@
 
 <AnchorPane id="AnchorPane" prefHeight="420.0" prefWidth="600.0" styleClass="main_archor_pane" stylesheets="@../css/catchtheking.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="metin2.ctk.CatchTheKingController">
    <children>
-      <ImageView fitHeight="20.0" fitWidth="566.0" layoutX="14.0" layoutY="7.0" onMouseDragged="#mouseDragged" onMousePressed="#mousePressed" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="7.0" AnchorPane.topAnchor="7.0">
+      <ImageView fitHeight="20.0" fitWidth="566.0" layoutX="7.0" layoutY="7.0" onMouseDragged="#mouseDragged" onMousePressed="#mousePressed" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/catchtheking/img_catchtheking_title.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="684.0" layoutY="14.0" onMouseClicked="#exit_" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="7.0">
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="573.0" layoutY="7.0" onMouseClicked="#exit_" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/catchtheking/img_catchtheking_btn_close.png" />
          </image>
       </ImageView>
-      <GridPane fx:id="visualTable" layoutX="14.0" layoutY="36.0" stylesheets="@../css/catchtheking.css" AnchorPane.leftAnchor="16.0" AnchorPane.topAnchor="41.0">
+      <GridPane fx:id="visualTable" layoutX="16.0" layoutY="41.0" prefHeight="300.0" prefWidth="400.0" stylesheets="@../css/catchtheking.css">
         <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="0.0" prefWidth="0.0" />
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="80.0" prefWidth="80.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="80.0" prefWidth="80.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="80.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="80.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="80.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" percentWidth="0.0" prefWidth="80.0" />
+            <ColumnConstraints hgrow="SOMETIMES" percentWidth="0.0" prefWidth="80.0" />
+            <ColumnConstraints hgrow="SOMETIMES" percentWidth="0.0" prefWidth="80.0" />
+            <ColumnConstraints hgrow="SOMETIMES" percentWidth="0.0" prefWidth="80.0" />
+            <ColumnConstraints hgrow="SOMETIMES" percentWidth="0.0" prefWidth="80.0" />
         </columnConstraints>
         <rowConstraints>
             <RowConstraints maxHeight="60.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
-          <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
+          <RowConstraints percentHeight="0.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints percentHeight="0.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints percentHeight="0.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints percentHeight="0.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints percentHeight="0.0" prefHeight="60.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
             <ImageView fitHeight="60.0" fitWidth="80.0" layoutX="10.0" layoutY="310.0" onMouseClicked="#openSelectorWindow" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
@@ -168,45 +168,32 @@
             </ImageView>
          </children>
       </GridPane>
-      <Button layoutX="24.0" layoutY="420.0" maxHeight="25.0" maxWidth="180.0" minHeight="25.0" minWidth="180.0" mnemonicParsing="false" onAction="#backToMainMenu" styleClass="main_btn" stylesheets="@../css/catchtheking.css" text="Back" textFill="WHITE" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="16.0">
-         <font>
-            <Font size="12.0" />
-         </font>
-      </Button>
-      <Button cache="true" layoutX="24.0" layoutY="372.0" maxHeight="25.0" maxWidth="180.0" minHeight="20.0" minWidth="180.0" mnemonicParsing="false" onAction="#resetGame" prefHeight="25.0" prefWidth="180.0" styleClass="main_btn" stylesheets="@../css/catchtheking.css" text="Reset Game" textFill="WHITE" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="16.0">
-         <font>
-            <Font size="12.0" />
-         </font>
-         <opaqueInsets>
-            <Insets />
-         </opaqueInsets>
-      </Button>
-      <GridPane fx:id="statusTable" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="41.0">
+      <GridPane fx:id="statusTable" layoutX="467.0" layoutY="41.0" prefHeight="360.0" prefWidth="110.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="0.0" prefWidth="0.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="60.0" prefWidth="60.0" />
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" percentWidth="0.0" prefWidth="60.0" />
+          <ColumnConstraints hgrow="SOMETIMES" percentWidth="0.0" prefWidth="50.0" />
         </columnConstraints>
         <rowConstraints>
           <RowConstraints minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
+          <RowConstraints percentHeight="0.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints percentHeight="0.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints percentHeight="0.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints percentHeight="0.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints percentHeight="0.0" prefHeight="60.0" vgrow="SOMETIMES" />
+          <RowConstraints percentHeight="0.0" prefHeight="60.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label alignment="CENTER" minHeight="60.0" minWidth="50.0" prefHeight="60.0" prefWidth="50.0" text="-" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <Label alignment="CENTER" prefHeight="60.0" prefWidth="50.0" text="-" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <GridPane.margin>
                   <Insets />
                </GridPane.margin>
             </Label>
-            <Label alignment="CENTER" layoutX="70.0" layoutY="10.0" minHeight="60.0" minWidth="50.0" prefHeight="60.0" prefWidth="50.0" text="-" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-            <Label alignment="CENTER" layoutX="70.0" layoutY="70.0" minHeight="60.0" minWidth="50.0" prefHeight="60.0" prefWidth="50.0" text="-" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-            <Label alignment="CENTER" layoutX="70.0" layoutY="130.0" minHeight="60.0" minWidth="50.0" prefHeight="60.0" prefWidth="50.0" text="-" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-            <Label alignment="CENTER" layoutX="70.0" layoutY="190.0" minHeight="60.0" minWidth="50.0" prefHeight="60.0" prefWidth="50.0" text="-" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-            <Label alignment="CENTER" layoutX="70.0" layoutY="250.0" minHeight="60.0" minWidth="50.0" prefHeight="60.0" prefWidth="50.0" text="-" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Label alignment="CENTER" layoutX="70.0" layoutY="10.0" prefHeight="60.0" prefWidth="50.0" text="-" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label alignment="CENTER" layoutX="70.0" layoutY="70.0" prefHeight="60.0" prefWidth="50.0" text="-" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label alignment="CENTER" layoutX="70.0" layoutY="130.0" prefHeight="60.0" prefWidth="50.0" text="-" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label alignment="CENTER" layoutX="70.0" layoutY="190.0" prefHeight="60.0" prefWidth="50.0" text="-" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Label alignment="CENTER" layoutX="70.0" layoutY="250.0" prefHeight="60.0" prefWidth="50.0" text="-" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="6" />
             <ImageView fitHeight="45.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <image>
                   <Image url="@../img/catchtheking/window/img_catchtheking_card_1_window.png" />
@@ -239,5 +226,15 @@
             </ImageView>
          </children>
       </GridPane>
+      <Button layoutX="16.0" layoutY="350.0" mnemonicParsing="false" onAction="#resetGame" prefHeight="25.0" prefWidth="180.0" styleClass="main_btn" stylesheets="@../css/catchtheking.css" text="Reset Game" textFill="WHITE">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="16.0" layoutY="383.0" mnemonicParsing="false" onAction="#backToMainMenu" prefHeight="25.0" prefWidth="180.0" styleClass="main_btn" stylesheets="@../css/catchtheking.css" text="Back" textFill="WHITE">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

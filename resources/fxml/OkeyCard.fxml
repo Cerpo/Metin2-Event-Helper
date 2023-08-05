@@ -12,17 +12,17 @@
 
 <AnchorPane id="AnchorPane" prefHeight="420.0" prefWidth="640.0" styleClass="main_archor_pane" stylesheets="@../css/okeycard.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="metin2.oc.OkeyCardController">
    <children>
-      <ImageView fitHeight="20.0" fitWidth="606.0" layoutX="24.0" layoutY="17.0" onMouseDragged="#mouseDragged" onMousePressed="#mousePressed" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="7.0" AnchorPane.topAnchor="7.0">
+      <ImageView fitHeight="20.0" fitWidth="606.0" layoutX="7.0" layoutY="7.0" onMouseDragged="#mouseDragged" onMousePressed="#mousePressed" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/okeycard/img_okeycard_title.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="510.0" layoutY="85.0" onMouseClicked="#exit_" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="7.0">
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="613.0" layoutY="7.0" onMouseClicked="#exit_" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/okeycard/img_okeycard_btn_close.png" />
          </image>
       </ImageView>
-      <GridPane fx:id="visualTable" prefHeight="300.0" prefWidth="608.0" AnchorPane.leftAnchor="16.0" AnchorPane.topAnchor="41.0">
+      <GridPane fx:id="visualTable" layoutX="16.0" layoutY="41.0" prefHeight="300.0" prefWidth="608.0">
         <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
             <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" percentWidth="70.0" />
@@ -154,18 +154,15 @@
             </ImageView>
          </children>
       </GridPane>
-      <Button layoutX="34.0" layoutY="430.0" maxHeight="25.0" maxWidth="180.0" minHeight="25.0" minWidth="180.0" mnemonicParsing="false" onAction="#backToMainMenu" styleClass="main_btn" stylesheets="@../css/okeycard.css" text="Back" textFill="WHITE" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="18.0">
+      <Button layoutX="18.0" layoutY="350.0" mnemonicParsing="false" onAction="#resetGame" prefHeight="25.0" prefWidth="180.0" styleClass="main_btn" stylesheets="@../css/okeycard.css" text="Reset Game" textFill="WHITE">
          <font>
             <Font size="12.0" />
          </font>
       </Button>
-      <Button cache="true" layoutX="34.0" layoutY="382.0" maxHeight="25.0" maxWidth="180.0" minHeight="20.0" minWidth="180.0" mnemonicParsing="false" onAction="#resetGame" prefHeight="25.0" prefWidth="180.0" styleClass="main_btn" stylesheets="@../css/okeycard.css" text="Reset Game" textFill="WHITE" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="18.0">
+      <Button layoutX="18.0" layoutY="383.0" mnemonicParsing="false" onAction="#backToMainMenu" prefHeight="25.0" prefWidth="180.0" styleClass="main_btn" stylesheets="@../css/okeycard.css" text="Back" textFill="WHITE">
          <font>
             <Font size="12.0" />
          </font>
-         <opaqueInsets>
-            <Insets />
-         </opaqueInsets>
       </Button>
    </children>
 </AnchorPane>
