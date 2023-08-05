@@ -22,7 +22,7 @@ import javafx.scene.paint.Color;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-//SetImage használható lenne mindehol, de még se teszem WTF
+
 public class CatchTheKingController {
     @FXML
     private GridPane visualTable;
@@ -154,7 +154,7 @@ public class CatchTheKingController {
     public void backToTable(MouseEvent e) {
         Node  n;
         Stage s;
-        //A bezárásnál, ha nem a jobb felső X-el záródik be a kisablak, akkor nem törli ki a changeCard-ot
+        
         changeCard.reset();
         n = (Node) e.getTarget();
         s = (Stage) n.getScene().getWindow();
@@ -278,7 +278,6 @@ public class CatchTheKingController {
     
     private List<String> getListOfNeighbours(int rowIndex, int colIndex) {
         List<String> l;
-        String       s;
         
         l = new ArrayList();
         
@@ -298,26 +297,17 @@ public class CatchTheKingController {
     }
     
     private void refreshTable() {
-        Image     i;
-        ImageView v;
-        
         for (int j = 0; j < table.length; j++) {
             for (int k = 0; k < table[1]. length; k++) {
-                i = getImage("d");
-                v = (ImageView) getNode(j + 1, k + 1);
-                v.setImage(i);
+                setCardImage(getNode(j + 1, k + 1),"d");
             }
         }
         for (int j = 0; j < table.length; j++) {
             for (int k = 0; k < table[1]. length; k++) {
                 if (!Cell.hasFNContainsCard2(String.valueOf(j) + String.valueOf(k))) {
-                    i = getImage(table[j][k].getValue());
-                    v = (ImageView) getNode(j + 1, k + 1);
-                    v.setImage(i);
+                    setCardImage(getNode(j + 1, k + 1), table[j][k].getValue());
                 } else if(!table[j][k].getValue().equals("d")) {
-                    i = getImage(table[j][k].getValue());
-                    v = (ImageView) getNode(j + 1, k + 1);
-                    v.setImage(i);
+                    setCardImage(getNode(j + 1, k + 1), table[j][k].getValue());
                 }
                 if (Cell.hasFNContainsCard(String.valueOf(j) + String.valueOf(k))) {
                     displayFiveNeighbours(j, k);
@@ -382,9 +372,6 @@ public class CatchTheKingController {
                 break;
             case "k":
                 cards.increaseAvailableCardsOfk();
-                break;
-            default:
-                System.out.println("WARNING IncreaseStatusOfCard");
         }
         
         refreshStatusTable();
@@ -413,7 +400,6 @@ public class CatchTheKingController {
                 b = cards.decreaseAvailableCardsOfk();
                 break;
             default:
-                System.out.println("WARNING DecreaseStatusOfCard");
                 b = false;
         }
         
@@ -445,15 +431,11 @@ public class CatchTheKingController {
     
     private void resetTable() {
         ObservableList<Node> n;
-        Image                i;
-        ImageView            v;
         
         n = visualTable.getChildren();
-        i = getImage("d");
         
         for (Node node : n) {
-            v = (ImageView) node;
-            v.setImage(i);
+            setCardImage(node, "d");
         }
     }
     
@@ -461,46 +443,9 @@ public class CatchTheKingController {
         Image  i;
         String n;
         
-        switch(cardName) {
-            case "1":
-                n = CARD_NUMBER_1;
-                break;
-            case "2":
-                n = CARD_NUMBER_2;
-                break;
-            case "3":
-                n = CARD_NUMBER_3;
-                break;
-            case "4":
-                n = CARD_NUMBER_4;
-                break;
-            case "5":
-                n = CARD_NUMBER_5;
-                break;
-            case "k":
-                n = CARD_NUMBER_K;
-                break;
-            case "s":
-                n = CARD_NUMBER_S;
-                break;
-            case "d":
-                n = CARD_NUMBER_D;
-                break;
-            default:
-                n = CARD_NUMBER_D;
-        }
-        
+        n = "img_catchtheking_card_" + cardName + ".png";
         i = new Image("/resources/img/catchtheking/" + n, false);
         
         return i;
     }
-    
-    private static final String CARD_NUMBER_D = "img_catchtheking_card_d.png";
-    private static final String CARD_NUMBER_S = "img_catchtheking_card_s.png";
-    private static final String CARD_NUMBER_1 = "img_catchtheking_card_1.png";
-    private static final String CARD_NUMBER_2 = "img_catchtheking_card_2.png";
-    private static final String CARD_NUMBER_3 = "img_catchtheking_card_3.png";
-    private static final String CARD_NUMBER_4 = "img_catchtheking_card_4.png";
-    private static final String CARD_NUMBER_5 = "img_catchtheking_card_5.png";
-    private static final String CARD_NUMBER_K = "img_catchtheking_card_k.png";
 }
