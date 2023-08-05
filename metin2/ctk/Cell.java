@@ -72,7 +72,7 @@ public class Cell {
             entry.getValue().remove(card);
         }
     }
-    
+    //fix
     public static void displayHashMaps() {
         for(Map.Entry<String, List<String>> entry : hasFiveNeighbour.entrySet()) {
             for (String l : entry.getValue()) {
