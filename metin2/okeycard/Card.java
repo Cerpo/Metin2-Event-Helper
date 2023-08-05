@@ -1,4 +1,4 @@
-package metin2.oc;
+package metin2.okeycard;
 
 import java.util.HashMap;
 import java.util.Map;

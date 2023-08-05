@@ -1,4 +1,4 @@
-package metin2;
+package metin2.mainmenu;
 
 import java.io.IOException;
 import static java.lang.System.exit;
@@ -12,7 +12,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
-public class Metin2Controller {
+public class MainMenuController {
     private double xOffset = 0;
     private double yOffset = 0;
     

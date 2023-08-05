@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="420.0" prefWidth="640.0" styleClass="main_archor_pane" stylesheets="@../css/okeycard.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="metin2.oc.OkeyCardController">
+<AnchorPane id="AnchorPane" prefHeight="420.0" prefWidth="640.0" styleClass="main_archor_pane" stylesheets="@../css/okeycard.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="metin2.okeycard.OkeyCardController">
    <children>
       <ImageView fitHeight="20.0" fitWidth="606.0" layoutX="7.0" layoutY="7.0" onMouseDragged="#mouseDragged" onMousePressed="#mousePressed" pickOnBounds="true" preserveRatio="true">
          <image>

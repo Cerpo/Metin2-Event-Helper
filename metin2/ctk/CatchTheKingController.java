@@ -119,7 +119,7 @@ public class CatchTheKingController {
         resetGame_();
         n = (Node) e.getTarget();
         s = (Stage) n.getScene().getWindow();
-        r = FXMLLoader.load(getClass().getResource("/resources/fxml/Metin2.fxml"));
+        r = FXMLLoader.load(getClass().getResource("/resources/fxml/MainMenu.fxml"));
         c = new Scene(r);
         c.setFill(Color.TRANSPARENT);
         s.setScene(c);

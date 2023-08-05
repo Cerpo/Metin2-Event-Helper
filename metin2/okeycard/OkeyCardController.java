@@ -1,4 +1,4 @@
-package metin2.oc;
+package metin2.okeycard;
 
 import java.io.IOException;
 import static java.lang.System.exit;
@@ -36,10 +36,10 @@ public class OkeyCardController {
         Parent r;
         Scene  c;
         
-        resetGame_();
+        resetGame_(false);
         n = (Node) e.getTarget();
         s = (Stage) n.getScene().getWindow();
-        r = FXMLLoader.load(getClass().getResource("/resources/fxml/Metin2.fxml"));
+        r = FXMLLoader.load(getClass().getResource("/resources/fxml/MainMenu.fxml"));
         c = new Scene(r);
         c.setFill(Color.TRANSPARENT);
         s.setScene(c);
@@ -72,12 +72,14 @@ public class OkeyCardController {
     
     @FXML
     public void resetGame(ActionEvent e) {
-        resetGame_();
+        resetGame_(true);
     }
     
-    private void resetGame_() {
+    private void resetGame_(boolean fullReset) {
         cards.refillCards();
-        refreshTable();
+        if (fullReset) {
+            refreshTable();
+        }
     }
     
     @FXML

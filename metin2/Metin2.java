@@ -15,7 +15,7 @@ public class Metin2 extends Application {
         Parent r;
         Scene  c;
         
-        r = FXMLLoader.load(getClass().getResource("/resources/fxml/Metin2.fxml"));
+        r = FXMLLoader.load(getClass().getResource("/resources/fxml/MainMenu.fxml"));
         c = new Scene(r);
         c.setFill(Color.TRANSPARENT);
         stage.setScene(c);

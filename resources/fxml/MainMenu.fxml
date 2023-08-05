@@ -10,9 +10,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="320.0" styleClass="main_archor_pane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="metin2.Metin2Controller">
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="320.0" styleClass="main_archor_pane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="metin2.mainmenu.MainMenuController">
     <stylesheets>
-        <URL value="@../css/metin2.css" />
+        <URL value="@../css/mainmenu.css" />
     </stylesheets>
    <children>
       <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="293.0" layoutY="7.0" onMouseClicked="#exit_" pickOnBounds="true" preserveRatio="true">
@@ -37,12 +37,12 @@
       </Label>
       <VBox layoutX="30.0" layoutY="138.0" prefHeight="300.0" prefWidth="260.0">
          <children>
-            <Button mnemonicParsing="false" onAction="#startCatchTheKing" prefHeight="30.0" prefWidth="260.0" styleClass="main_btn" stylesheets="@../css/metin2.css" text="Catch The King" textFill="WHITE">
+            <Button mnemonicParsing="false" onAction="#startCatchTheKing" prefHeight="30.0" prefWidth="260.0" styleClass="main_btn" stylesheets="@../css/mainmenu.css" text="Catch The King" textFill="WHITE">
                <font>
                   <Font size="12.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" onAction="#startOkeyCard" prefHeight="30.0" prefWidth="260.0" styleClass="main_btn" stylesheets="@../css/metin2.css" text="Okey Card" textFill="WHITE">
+            <Button mnemonicParsing="false" onAction="#startOkeyCard" prefHeight="30.0" prefWidth="260.0" styleClass="main_btn" stylesheets="@../css/mainmenu.css" text="Okey Card" textFill="WHITE">
                <font>
                   <Font size="12.0" />
                </font>
@@ -50,7 +50,7 @@
                   <Insets top="12.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="260.0" styleClass="main_btn" stylesheets="@../css/metin2.css" text="---" textFill="WHITE">
+            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="260.0" styleClass="main_btn" stylesheets="@../css/mainmenu.css" text="---" textFill="WHITE">
                <font>
                   <Font size="12.0" />
                </font>
